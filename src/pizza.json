@@ -1,73 +1,37 @@
 [
-    {
-        "name": "MARGHERITA",
-        "price": "300",
-        "img": "https://www.dominos.co.in/files/items/Margherit.jpg"
-    },
-    {
-        "name": "MEXICAN GREEN WAVE",
-        "price": "550",
-        "img": "https://www.dominos.co.in/files/items/Mexican_Green_Wave.jpg"
-    },
-    {
-        "name": "DELUXE VEGGIE",
-        "price": "750",
-        "img": "https://www.dominos.co.in/files/items/Deluxe_Veggie.jpg"
-       
-    },
-    {
-        "name": "DOUBLE CHEESE MARGHERITA",
-        "price": "299",
-        "img": "https://www.dominos.co.in/files/items/Double_Cheese_Margherita.jpg"
-        
-    },
-    {
-        "name": "FARM HOUSE",
-        "price": "500",
-        "img": "https://www.dominos.co.in/files/items/Farmhouse.jpg"
-        
-    },
-    {
-        "name": "PEPPY PANEER",
-        "price": "745",
-        "img": "https://www.dominos.co.in/files/items/Peppy_Paneer.jpg"
-        
-    },
-    {
-        "name": "VEG EXTRAVAGANZA",
-        "price": "312",
-        "img": "https://www.dominos.co.in/files/items/Veg_Extravaganz.jpg"
-        
-    },
-    {
-        "name": "CHEESE N CORN",
-        "price": "799",
-        "img": "https://www.dominos.co.in/files/items/Corn_&_Cheese.jpg"
-       
-    },
-    {
-        "name": "PANEER MAKHANI",
-        "price": "279",
-        "img": "https://www.dominos.co.in/files/items/Paneer_Makhni.jpg"
-        
-    },
-    {
-        "name": "VEGGIE PARADISE",
-        "price": "725",
-        "img": "https://www.dominos.co.in/files/items/Digital_Veggie_Paradise_olo_266x265.jpg"
-        
-    },
-    {
-        "name": "FRESH VEGGIE",
-        "price": "852",
-        "img": "https://www.dominos.co.in/files/items/Fresh_Veggie.jpg"
-        
-    },
-    {
-        "name": "INDI TANDOORI PANEER",
-        "price": "254",
-        "img": "https://www.dominos.co.in/files/items/IndianTandooriPaneer.jpg"
-       
-    }
-    
+  {
+    "name": "Dairy Milk",
+    "price": "95",
+    "img": "https://www.cadburygifting.in/media/catalog/product/c/o/congrats_fop_2.jpg"
+  },
+  {
+    "name": "Milky Bar",
+    "price": "50",
+    "img": "https://ik.imagekit.io/dunzo/1645105472623_variant_5be1bce848e1c43d79561bf7_1.jpg"
+  },
+  {
+    "name": "Galaxy",
+    "price": "150",
+    "img": "https://www.nicepng.com/png/detail/14-147641_our-products-galaxy-24-x-42g-delivered-worldwide.png"
+  },
+  {
+    "name": "Kisses",
+    "price": "140",
+    "img": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=400,h=400/app/images/products/sliding_image/402563a.jpg"
+  },
+  {
+    "name": "Kit Kat",
+    "price": "40",
+    "img": "https://expatspantry.com/wp-content/uploads/2018/02/Kit-Kat-4-Finger-Bar.jpg"
+  },
+  {
+    "name": "Nestle Quality Street ",
+    "price": "1400",
+    "img": "https://sweetflower.tn/wp-content/uploads/2022/01/s-l1600.jpg"
+  },
+  {
+    "name": "Eclaris ",
+    "price": "69",
+    "img": "https://media.takealot.com/covers_images/d1515afaa7ce41fab106cdd8ca7ca2bc/s-zoom.file"
+  }
 ]

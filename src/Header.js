@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { useHistory } from "react-router-dom";
-
+import CookieIcon from "@mui/icons-material/Cookie";
 function Header(props) {
   const [click, setClick] = useState(false);
 
@@ -26,14 +26,15 @@ function Header(props) {
       <nav className="navvbar">
         <div className="navv-container">
           <Link to="/" className="navv-logo">
-            Notes
+            <CookieIcon style={{ paddingRight: "10px" }} size="large" />
+            Dairy
           </Link>
 
           {props.adminsign || props.usersign ? (
             type === "user" && (
               <>
                 <ul className={click ? "navv-menu active" : "navv-menu"}>
-                  <li className="navv-item">
+                  {/* <li className="navv-item">
                     <Link
                       to="/user/adduser"
                       activeClassName="active"
@@ -41,14 +42,14 @@ function Header(props) {
                     >
                       Add Notes
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="navv-item">
                     <Link
-                      to="allusers"
+                      to="products"
                       activeClassName="active"
                       className="navv-links"
                     >
-                      Notes List
+                      products
                     </Link>
                   </li>
 

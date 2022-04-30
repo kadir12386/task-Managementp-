@@ -47,7 +47,7 @@ function UserSignin(props) {
             icon: "success",
             button: "ok!",
           });
-          history.push(`/user/adduser`);
+          history.push(`/products`);
         }
       });
   }

@@ -5,28 +5,28 @@ import UserSignup from "./UserSignup";
 import UserSignin from "./UserSignin";
 import AdminSignin from "./AdminSignin";
 import AdminSignup from "./AdminSignup";
-// import Pizzas from "./Pizzas";
+import Pizzas from "./Pizzas";
 import AdminDashBoard from "./AdminDashBoard";
 import Header from "./Header";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Checkout from "./Checkout";
-import { Adduser } from "./user/Adduser";
-import { EditUser } from "./user/EditUser";
-import { UserList } from "./user/UserList";
-import { Redirect } from "react-router-dom";
+// import { Adduser } from "./user/Adduser";
+// import { EditUser } from "./user/EditUser";
+// import { UserList } from "./user/UserList";
+// import { Redirect } from "react-router-dom";
 function App() {
   const [usersign, setUserSign] = useState(false);
   const [adminsign, setAdminsign] = useState(false);
   //  const history = useHistory();
-  const [user, setUser] = useState([]); //common one
+  // const [user, setUser] = useState([]); //common one
   //fetch
-  useEffect(() => {
-    fetch("https://614ed775b4f6d30017b483a0.mockapi.io/sample", {
-      method: "GET",
-    })
-      .then((data) => data.json())
-      .then((mvs) => setUser(mvs));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://614ed775b4f6d30017b483a0.mockapi.io/sample", {
+  //     method: "GET",
+  //   })
+  //     .then((data) => data.json())
+  //     .then((mvs) => setUser(mvs));
+  // }, []);
   return (
     <>
       <Header
@@ -51,20 +51,20 @@ function App() {
         <Route exact path="/admins/signin">
           <AdminSignin setAdminsign={setAdminsign} />
         </Route>
-        {/* <Route exact path="/pizzas">
+        <Route exact path="/products">
           <Pizzas />
-        </Route> */}
+        </Route>
         <Route exact path="/admin-dashboard">
           <AdminDashBoard
             setUserSign={setUserSign}
             setAdminsign={setAdminsign}
           />
         </Route>
-        <Route exact path="/pizzas/cart-checkout/">
+        <Route exact path="/cart-checkout">
           <Checkout />
         </Route>
         {/* =========================================== */}
-        <Route path="/user/adduser">
+        {/* <Route path="/user/adduser">
           <Adduser />
         </Route>
         <Route path="/user/edit/:user_id">
@@ -76,8 +76,8 @@ function App() {
         </Route>
 
         <Route path="/user">
-          <UserList user={user} setUser={setUser} />
-        </Route>
+          <UserList user={user} setUser={setUser} /> */}
+        {/* </Route> */}
       </Switch>
     </>
   );

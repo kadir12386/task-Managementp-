@@ -5,21 +5,27 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import LocalPizzaIcon from "@mui/icons-material/LocalPizza";
+// import LocalPizzaIcon from "@mui/icons-material/LocalPizza";
 import Typography from "@mui/material/Typography";
 import apiUrl from "./globalConstant";
 import swal from "sweetalert";
 import { useHistory } from "react-router-dom";
+import pix from "./pizza.json";
 
 export default function Pizzas() {
+  const pizza = pix;
+  console.log(pizza);
   const history = useHistory();
 
-  const [pizzas, setPizzas] = useState([]);
+  const [pizzas, setPizzas] = useState(pizza);
   const [cart, setCart] = useState(0);
 
   const getPizzas = () => {
     getAPi(`${apiUrl}/pizzas`)
-      .then((pizza) => setPizzas(pizza))
+      .then((pizza) => {
+        setPizzas(pizzas);
+        console.log(pizza);
+      })
       .catch((err) => {
         swal("Login to View Pizzas", "Try again", "error");
         history.push("/users/signin");
@@ -50,21 +56,21 @@ export default function Pizzas() {
     <>
       <div className="cart">
         <div>
-          <Button
+          {/* <Button
             startIcon={<LocalPizzaIcon />}
             variant="contained"
             className="mt-auto"
             color="primary"
           >
             Make your own pizza(Currently unavailable)
-          </Button>
+          </Button> */}
         </div>
         <Button
           startIcon={<ShoppingCartIcon />}
           variant="contained"
           className="mt-auto"
           color="primary"
-          onClick={() => history.push(`/pizzas/cart-checkout`)}
+          onClick={() => history.push(`/cart-checkout`)}
         >
           Cart {cart}
         </Button>
@@ -122,12 +128,13 @@ export default function Pizzas() {
                           swal(data.message, "Try again", "error");
                         } else {
                           swal({
-                            title: "Pizza successfully Added",
+                            title: "successfully Added",
                             icon: "success",
                             button: "Enjoy!",
                           });
                         }
-                      }).then(data=>getCartItems())
+                      })
+                      .then((data) => getCartItems());
                   }}
                 >
                   Add to cart
