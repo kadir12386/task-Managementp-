@@ -17,13 +17,12 @@ export default function Pizzas() {
   console.log(pizza);
   const history = useHistory();
 
-  const [pizzas, setPizzas] = useState(pizza);
+  const [pizzas] = useState(pizza);
   const [cart, setCart] = useState(0);
 
   const getPizzas = () => {
     getAPi(`${apiUrl}/pizzas`)
       .then((pizza) => {
-        setPizzas(pizzas);
         console.log(pizza);
       })
       .catch((err) => {
