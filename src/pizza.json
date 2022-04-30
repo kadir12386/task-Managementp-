@@ -1,0 +1,73 @@
+[
+    {
+        "name": "MARGHERITA",
+        "price": "300",
+        "img": "https://www.dominos.co.in/files/items/Margherit.jpg"
+    },
+    {
+        "name": "MEXICAN GREEN WAVE",
+        "price": "550",
+        "img": "https://www.dominos.co.in/files/items/Mexican_Green_Wave.jpg"
+    },
+    {
+        "name": "DELUXE VEGGIE",
+        "price": "750",
+        "img": "https://www.dominos.co.in/files/items/Deluxe_Veggie.jpg"
+       
+    },
+    {
+        "name": "DOUBLE CHEESE MARGHERITA",
+        "price": "299",
+        "img": "https://www.dominos.co.in/files/items/Double_Cheese_Margherita.jpg"
+        
+    },
+    {
+        "name": "FARM HOUSE",
+        "price": "500",
+        "img": "https://www.dominos.co.in/files/items/Farmhouse.jpg"
+        
+    },
+    {
+        "name": "PEPPY PANEER",
+        "price": "745",
+        "img": "https://www.dominos.co.in/files/items/Peppy_Paneer.jpg"
+        
+    },
+    {
+        "name": "VEG EXTRAVAGANZA",
+        "price": "312",
+        "img": "https://www.dominos.co.in/files/items/Veg_Extravaganz.jpg"
+        
+    },
+    {
+        "name": "CHEESE N CORN",
+        "price": "799",
+        "img": "https://www.dominos.co.in/files/items/Corn_&_Cheese.jpg"
+       
+    },
+    {
+        "name": "PANEER MAKHANI",
+        "price": "279",
+        "img": "https://www.dominos.co.in/files/items/Paneer_Makhni.jpg"
+        
+    },
+    {
+        "name": "VEGGIE PARADISE",
+        "price": "725",
+        "img": "https://www.dominos.co.in/files/items/Digital_Veggie_Paradise_olo_266x265.jpg"
+        
+    },
+    {
+        "name": "FRESH VEGGIE",
+        "price": "852",
+        "img": "https://www.dominos.co.in/files/items/Fresh_Veggie.jpg"
+        
+    },
+    {
+        "name": "INDI TANDOORI PANEER",
+        "price": "254",
+        "img": "https://www.dominos.co.in/files/items/IndianTandooriPaneer.jpg"
+       
+    }
+    
+]

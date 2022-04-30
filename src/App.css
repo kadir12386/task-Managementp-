@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #b5fac7; */
+  overflow: "scroll" !important;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pizza-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 15px;
+  padding: 5px;
+  justify-items: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.cart {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+  margin: 15px;
+}
+
+.header1 {
+  font-family: "Lora", serif;
+}
+
+.para-text {
+  font-family: "Play", sans-serif;
+  font-size: large;
+}
+
+.about {
+  margin: 10px;
+}
+
+/* new styles */
+.App {
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  font-family: sans-serif;
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.welcome-text {
+  font-family: sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  background-image: url("https://st2.depositphotos.com/2162901/5758/v/600/depositphotos_57580801-stock-video-colourful-abstract-christmas-background.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+h1 {
+  text-align: center;
+}
+.user-contianer-box {
+  width: 95vw;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-gap: 20px;
+}
+.user_container {
+  width: 240px;
+  height: max-content;
+  padding: 0px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.user_container img {
+  width: 238px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.user_container-info {
+  /* background-color: white; */
+  padding: 10px;
+}
+.user_container-info .user-name {
+  color: darkblue;
+  font-size: 20px;
+}
+.icons-box {
+  display: flex;
+  justify-content: space-between;
+}
+.like-container {
+  padding: 20px 10px 10px 10px;
+}
+.icon-container {
+  padding: 20px 10px 10px 10px;
+}
+.deleteIcon {
+  margin: 0px 0px 0px 10px;
+}
+/* menu bar */
+.main-menu {
+  background-color: #24d9c7;
+  padding: 8px 20px;
+}
+.add_form_box {
+  width: 70%;
+  height: 90vh;
+  margin: 60px 20px 0px 180px;
+}
+.Adduser-container {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.editbtn {
+  background-color: #075116f3 !important;
+}
+.deletebtn {
+  background-color: #df0324 !important;
+}
+.Adduser-container .input-box {
+  margin: 10px 0;
+}
+.Adduser-container .input-box_button {
+  background-color: rgb(147, 7, 89);
+  margin: 10px 0px 30px;
+}
+.Adduser-container .input-box_button:hover {
+  background-color: cadetblue;
+}
+.added_notes {
+  margin-top: 10px;
+  color: rgb(96, 93, 93);
+}
+/* @media (max-width: 1024px) {
+  .user-contianer-box {
+    background-color: green;
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+@media (min-width: 1240px) {
+  .user-contianer-box {
+    /* background-color: red; */
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .user-contianer-box {
+    /* background-color: green; */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 991px) {
+  .user-contianer-box {
+    /* background-color: cornflowerblue; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .user-contianer-box {
+    /* background-color: tomato; */
+    width: 100vw;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
